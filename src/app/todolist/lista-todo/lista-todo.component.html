@@ -1,0 +1,11 @@
+<ul class="list-group list-group-flush">
+  <li class="list-group-item" *ngFor="let item of todos; let i = index">
+    <span ngClass="{{ item.check }}">{{ i + 1 }} - {{ item.text }}</span>
+    <button type="button" class="btn btn-danger btn-sm mx-2 float-end">
+      x
+    </button>
+    <button type="button" class="btn btn-success btn-sm mx-2 float-end">
+      v
+    </button>
+  </li>
+</ul>
